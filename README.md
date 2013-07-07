@@ -80,9 +80,9 @@ Holidays.between(Date.civil(2013, 1, 1), 2.years.from_now, :gb).
 
 ## Running specs
 
-```ruby
-bundle
-rspec spec
+```
+$ bundle
+$ rspec spec
 ```
 
 ## Contributing
