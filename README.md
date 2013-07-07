@@ -61,7 +61,7 @@ In there, you'll want to set your daily hours and any holidays:
 ```ruby
 InBusiness.hours = {
   monday: "09:00".."18:00",
-  tuesday: "10:00".."19:00,
+  tuesday: "10:00".."19:00",
   # ...
   saturday: "09:00".."12:00"
 }
