@@ -6,7 +6,8 @@ to write for each application.
 We have awesome gems like
 [business_time](https://github.com/bokmann/business_time) which help, but there's
 a gap in the market for something that knows your hours, and can quickly tell
-you whether a particular time is open or closed.
+you whether a particular time is open or closed concretely. As fun as crazy
+time calculations are!
 
 I've been doing quite a lot of work recently building [Twilio](http://www.twilio.com)
 apps such as my startup employer [GoCardless](https://gocardless.com)'s
@@ -77,6 +78,8 @@ Just do something like this, perhaps in your Rails initializer:
 Holidays.between(Date.civil(2013, 1, 1), 2.years.from_now, :gb).
   map{|holiday| InBusiness.holidays << holiday[:date]}
 ```
+
+This little technique is inspired by [business_time]([business_time](https://github.com/bokmann/business_time))'s readme!
 
 ## Running specs
 
