@@ -10,8 +10,23 @@ module InBusiness
     @holidays
   end
 
+  def self.holidays=(array)
+    @holidays = array
+  end
+
   def self.hours
     @hours
+  end
+
+  def self.hours=(hash)
+    @hours = OpenStruct.new(hash)
+  end
+
+  def self.reset
+    # Used for clearing the state of InBusiness between specs
+    @holidays = []
+    @hours = OpenStruct.new
+    true
   end
 
   def self.open?(datetime)

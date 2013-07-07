@@ -1,4 +1,7 @@
+require 'rubygems'
+require 'bundler'
 require 'rspec'
+require 'timecop'
 require 'in_business'
 
 RSpec.configure do |config|

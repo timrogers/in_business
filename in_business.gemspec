@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "rspec", '~> 2.14.0'
+  spec.add_development_dependency "timecop"
   spec.add_development_dependency "rake"
 
   spec.add_runtime_dependency "activesupport", '~> 4.0.0'
