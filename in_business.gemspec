@@ -6,10 +6,10 @@ require 'in_business/version'
 Gem::Specification.new do |spec|
   spec.name          = "in_business"
   spec.version       = InBusiness::VERSION
-  spec.summary       = %Q{Support for checking whether a given DateTime, Date or Time is within a predefined set of opening hours}
+  spec.summary       = %Q{A gem for checking whether a given DateTime, Date or Time is within a predefined set of opening hours}
   spec.authors       = ["Tim Rogers"]
   spec.email         = ["tim@gocardless.com"]
-  spec.description   = %q{Support for checking whether a given DateTime, Date or Time is within a predefined set of opening hours}
+  spec.description   = %q{A gem for checking whether a given DateTime, Date or Time is within a predefined set of opening hours}
   spec.homepage      = "https://github.com/timrogers/in_business"
 
   spec.files         = `git ls-files`.split($/)
