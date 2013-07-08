@@ -10,8 +10,8 @@ you whether a particular time is open or closed concretely. As fun as crazy
 time calculations are!
 
 I've been doing quite a lot of work recently building [Twilio](http://www.twilio.com)
-apps such as my startup employer [GoCardless](https://gocardless.com)'s
-[Nodephone](https://gocardless.com/blog/data-driven-support/) where you need
+apps (such as my startup employer [GoCardless](https://gocardless.com)'s
+[Nodephone](https://gocardless.com/blog/data-driven-support/), amongst others) where you need
 to work out if an incoming call is during office hours or not.
 
 This gem allows you to do that kind of thing with simple `.open?` and `.closed?`
