@@ -29,7 +29,7 @@ module InBusiness
     true
   end
 
-  def self.open?(datetime)
+  def self.open?(datetime=DateTime.now)
     
     # If this is included in the list of holidays, return false
     return false if is_holiday? datetime
@@ -45,11 +45,11 @@ module InBusiness
     true # It's not not open, so it must be open ;)
   end
 
-  def self.closed?(datetime)
+  def self.closed?(datetime=DateTime.now)
     !open?(datetime)
   end
 
-  def self.is_holiday?(date)
+  def self.is_holiday?(date=DateTime.now)
     @holidays.include? date.to_date
   end
 

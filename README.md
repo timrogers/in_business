@@ -24,10 +24,11 @@ gem.
 ## Usage
 
 ```ruby
-InBusiness.open? DateTime.now # => nil (since we've not set any hours yet!)
+InBusiness.open? # => nil (since we've not set any hours yet!)
 
 # We want to be open 9am til 6pm on a Monday
 InBusiness.hours.monday = "09:00".."18:00"
+InBusiness.open? # Returns true if it's Monday between 9am and 6pm, false otherwise
 InBusiness.open? DateTime.parse('10am Monday') # => true
 InBusiness.closed? DateTime.parse('9pm Monday') # => true
 
