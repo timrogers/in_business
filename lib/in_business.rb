@@ -42,7 +42,7 @@ module InBusiness
       return false unless hours.send(days[datetime.wday.to_s].to_sym)
 
       # We have opening hours, so check if the current time is within them
-      if !hours.send(days[datetime.wday.to_s].to_sym).include? datetime.strftime("%H:%M")
+      if !hours.send(days[datetime.wday.to_s].to_sym).cover? datetime.strftime("%H:%M")
         return false
       end
 
